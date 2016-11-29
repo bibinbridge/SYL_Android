@@ -1,0 +1,433 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/appbackground" >
+
+    <RelativeLayout
+        android:id="@+id/rel_heading"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/actionbar_bg" >
+
+        <TextView
+            android:id="@+id/txt_apptype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Cancelled Request"
+            android:textColor="@color/white"
+            android:textSize="20sp" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/img_backarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/tablet_backarrow" >
+        </ImageView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rel_heading" >
+
+        <RelativeLayout
+            android:id="@+id/rel_roundimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp" >
+<RelativeLayout
+    android:id="@+id/rel_roundimage1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Name"
+android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/liout_addphoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvname" >
+
+                <!-- <ImageView -->
+                <!-- android:id="@+id/imageView1" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_alignParentTop="true" -->
+
+
+                <!-- android:background="@drawable/index" /> -->
+
+                <com.makeramen.RoundedImageView
+                    android:id="@+id/ImClientImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:padding="10dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/syl_nouserimage"
+                    app:border_color="#cccccc"
+                    app:border_width="1dip"
+                    app:corner_radius="100dip" />
+            </LinearLayout>
+</RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/RlDetails"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/rel_roundimage1" >
+
+                <TextView
+                    android:id="@+id/tvAppointmentTopic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="@string/AppointmentTopic"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvAppointmentHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAppointmentTopic"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/AppointmentHeading"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAppointmentDetailsdescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAppointmentHeading"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18sp"
+                    android:text="hghgsdfgsdhfjshdjfhsjsdfjhdjfhjhfsdjhjhsdfjhjhhhhhjasdffdhjghjfghj"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RlMeetingDetails"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               android:layout_below="@id/rel_roundimage1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/signupbg" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp" >
+<EditText
+                        android:id="@+id/etxt_sylconference"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/tablet_signup_etxtbg"
+                        android:drawableLeft="@drawable/tablet_opentokicon"
+                        android:drawablePadding="6dp"
+                        android:editable="false"
+                        android:text="SYL Conference"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+<EditText
+                        android:id="@+id/etxt_googlehangout"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                   android:background="@drawable/tablet_signup_etxtbg"
+                        android:drawableLeft="@drawable/tablet_hangouticon"
+                        android:drawablePadding="6dp"
+                        android:editable="false"
+                        android:text="ajith@gmail.com"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" 
+                           android:layout_below="@+id/etxt_sylconference"                />
+                    <EditText
+                        android:id="@+id/etmobNo"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                 android:background="@drawable/tablet_signup_etxtbg"
+                        android:drawableLeft="@drawable/tablet_mobileicon"
+                        android:drawablePadding="6dp"
+                        android:editable="false"
+                        android:text="@string/MobileNumber"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" 
+                          android:layout_below="@+id/etxt_googlehangout"
+                        android:drawableRight="@drawable/syl_callbutton"
+                        android:focusable="false"
+                        
+                        />
+
+                    <EditText
+                        android:id="@+id/etskypeId"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/etmobNo"
+                        android:layout_gravity="center"
+                      android:background="@drawable/tablet_signup_etxtbg"
+                        android:drawableLeft="@drawable/tablet_skypeicon"
+                        android:drawablePadding="6dp"
+                        android:editable="false"
+                        android:text="@string/SkypeID"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:drawableRight="@drawable/syl_callbutton"
+                        android:focusable="false"/>
+                    <EditText
+                        android:id="@+id/etxt_facetimeid"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/etskypeId"
+                        android:layout_gravity="center"
+                        android:background="@drawable/tablet_signup_etxtbg"
+                        android:drawableLeft="@drawable/tablet_facetimeicon"
+                        android:drawablePadding="6dp"
+                        android:editable="false"
+                        android:text="Facetime ID"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+
+
+                        />
+
+                    <EditText
+                        android:id="@+id/etchooseContacts"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/etxt_facetimeid"
+                        android:background="@drawable/tablet_signup_etxtbg"
+                        android:drawableLeft="@drawable/tablet_chooseicon"
+                        android:drawablePadding="12dp"
+                        android:drawableRight="@drawable/downarrow"
+                        android:editable="false"
+                        android:text="Contact options were"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:focusable="false"  />
+
+                    <RelativeLayout
+                        android:id="@+id/RlContactsDropdown"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etchooseContacts"
+                        android:background="@drawable/dropdownbg"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp" >
+
+                            <EditText
+                              android:id="@+id/etxt_priority1"
+                                android:layout_width="260dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center"
+                                android:background="@drawable/tablet_signup_etxtbg"
+                                android:drawableLeft="@drawable/tablet_skypeicon"
+                                android:drawablePadding="6dp"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:text="Priority 1 is skype"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                  android:id="@+id/etxt_priority2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentRight="true"
+                               android:layout_below="@+id/etxt_priority1"
+                                android:layout_gravity="center"
+                             android:background="@drawable/tablet_signup_etxtbg"
+                                android:drawableLeft="@drawable/tablet_mobileicon"
+                                android:drawablePadding="6dp"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:text="Priority 2 is Mobile"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/txtview_priority3"
+                                android:layout_width="260dp"
+                                android:layout_height="wrap_content"
+                                 android:layout_below="@+id/etxt_priority2"
+                                android:layout_gravity="center"
+                                android:drawableLeft="@drawable/tablet_opentokicon"
+                                android:drawablePadding="6dp"
+                                android:editable="false"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:text="Priority 3 is open tok"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/etchoosedate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/RlContactsDropdown"
+                        android:background="@drawable/tablet_signup_etxtbg"
+                        android:drawableLeft="@drawable/tablet_chooseicon"
+                        android:drawablePadding="12dp"
+                        android:drawableRight="@drawable/downarrow"
+                        android:editable="false"
+                        android:text="Preferred dates were"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:focusable="false"/>
+
+                    <RelativeLayout
+                        android:id="@+id/RlDatedown"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etchoosedate"
+                        android:background="@drawable/dropdownbg"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp" >
+
+                            <EditText
+                                android:id="@+id/etprefDateandtimeone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_gravity="center"
+                                android:background="@drawable/tablet_signup_etxtbg"
+                                android:drawableLeft="@drawable/tablet_datetimeicon"
+                           android:drawablePadding="6dp"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:text="Preferred date and time  22-03-2014 5:00:00 PM"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" 
+                                     android:layout_marginTop="2dp"
+                                     android:paddingBottom="2dp" />
+
+                            <EditText
+                                android:id="@+id/etprefDateandtimetwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_below="@+id/etprefDateandtimeone"
+                                android:layout_gravity="center"
+                      android:background="@drawable/tablet_signup_etxtbg"
+                                  android:drawableLeft="@drawable/tablet_datetimeicon"
+                       android:drawablePadding="6dp"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:text="Preferred date and time  22-03-2014 5:00:00 PM"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                   android:paddingBottom="2dp"
+                                     android:layout_marginTop="2dp"  />
+ 
+                            <TextView
+                                android:id="@+id/tvprefDateandtimethree"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/etprefDateandtimetwo"
+                           android:gravity="center_vertical"
+                              android:drawableLeft="@drawable/tablet_datetimeicon"
+                            android:drawablePadding="6dp"
+                                android:background="@drawable/tablet_signup_etxtbglast"
+                                android:text="Preferred date and time  25-03-2014 5:00:00 PM"
+                                android:textColor="@color/white"
+                                android:layout_alignParentLeft="true"
+                                android:textSize="18sp"
+                              android:paddingBottom="2dp"
+                                 /> 
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/RlDatedown" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/RlMeetingDetails"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp" >
+                <Button
+                    android:id="@+id/btnConfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/selector_tablet_btnsignin"
+                    android:text="Reschedule"
+                    android:textColor="@color/white"
+                    android:onClick="navigatetoReschuduleScreen"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/btnlayout" >
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/D:/SYL-Backup-18-dec-2015/SYL-backup-12-oct-2015/app/src/main/res/layout-sw720dp/cancel_requestdetaillayout.xml -->

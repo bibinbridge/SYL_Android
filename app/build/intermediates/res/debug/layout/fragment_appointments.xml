@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+     >
+        <com.webcamconsult.syl.swiperefresh.SwipeRefreshLayout
+    android:id="@+id/swipe_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/etxt_searchfavourites"
+            android:layout_above="@+id/rel_apphistorylayout"
+    >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+        </com.webcamconsult.syl.swiperefresh.SwipeRefreshLayout>
+<RelativeLayout
+   android:id="@+id/rel_apphistorylayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/sylhistorywidth"
+android:layout_alignParentBottom="true"
+    android:background="@color/history_background"
+    >
+<LinearLayout
+    android:id="@+id/liout_history"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:orientation="vertical"
+  android:layout_marginTop="12dp"
+    >
+    <ImageView
+        android:id="@+id/img_history"
+android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/history_icon"
+        android:layout_gravity="center_horizontal"
+        >
+
+
+        </ImageView>
+    <TextView
+        android:id="@+id/txt_appointmenthistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appointment_history"
+        android:textSize="12sp"
+        android:textColor="@color/history_textcolor"
+        >
+
+
+
+        </TextView>
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout><!-- From: file:/D:/SYL-Backup-18-dec-2015/SYL-backup-12-oct-2015/app/src/main/res/layout/fragment_appointments.xml -->

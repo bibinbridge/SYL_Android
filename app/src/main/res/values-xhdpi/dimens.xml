@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Values XHDPI -->
+<resources>
+
+    <dimen name="syllogo">136dp</dimen>
+    <!-- Values sylsplashlayout -->
+    <dimen name="splash_versionbottom">8dp</dimen>
+    <!-- Values sylverificationcode layout -->
+    <dimen name="verificationtextsize">14sp</dimen>
+    <!-- Values Forgotpasswordscreen layout -->
+    <dimen name="marginleft">10dp</dimen>
+    <dimen name="textheading18sp">18sp</dimen>
+    <dimen name="marginleft20dp">20dp</dimen>
+    <dimen name="marginright20dp">20dp</dimen>
+    <dimen name="email_width">320dp</dimen>
+    <!-- Values Signuplayout layout -->
+    <dimen name="image_width">100dp</dimen>
+    <dimen name="image_height">100dp</dimen>
+    <dimen name="liout_height">330dp</dimen>
+    <dimen name="username_width">240dp</dimen>
+    <!-- Values Signinlayout layout -->
+    <dimen name="syllogo_margintop">100dp</dimen>
+    <dimen name="signin_marginleft">30dp</dimen>
+    <dimen name="signin_marginright">30dp</dimen>
+    <dimen name="signin_margintop">80dp</dimen>
+    <dimen name="signin_edittextwidth">240dp</dimen>
+    <dimen name="signin_drawablepadding">10dp</dimen>
+    <dimen name="signin_textsize">14sp</dimen>
+    <dimen name="signin_buttonmargintop">10dp</dimen>
+    <dimen name="signin_textviewmarginleft">6dp</dimen>
+    <dimen name="signin_textviewmargintop">10dp</dimen>
+    <dimen name="signin_textviewsize">16sp</dimen>
+    <dimen name="signin_lioutmarginleft">30dp</dimen>
+    <dimen name="signin_lioutmargintop">60dp</dimen>
+    <dimen name="signin_signupbtnmarginleft">20dp</dimen>
+    <dimen name="signin_signupbtnmargintop">10dp</dimen>
+    <dimen name="signin_newusertextsize">16sp</dimen>
+   <!-- Values Signinlayout layout -->
+  <dimen name="signup_signupmargintop">20dp</dimen>
+      <!-- Values Request new appointment layout -->
+   <dimen name="reqnew_preflayout">140dp</dimen>
+   <dimen name="reqnew_spinnerwidth">220dp</dimen>
+   
+     <!-- Values Appointment Listing each row -->
+   
+   <dimen name="roundimage_width">94dp</dimen>
+   <dimen name="roundimage_height">94dp</dimen>
+     <!-- Values Actionbarcustomlayout -->
+      <dimen name="title_marginleft">90dp</dimen>
+               <!-- Values request new appointment -->
+                  <dimen name="relative_chooseoption">220dp</dimen>
+                   <!-- Values Appointment Listing each row -->
+           <dimen name="listingeachrow_margintop">18dp</dimen>
+    <dimen name="phonecontactnamewidth">180dp</dimen>
+</resources>

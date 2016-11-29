@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rel_roundimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/liout_addphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true" >
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/imageView1" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentTop="true" -->
+
+
+            <!-- android:background="@drawable/index" /> -->
+
+            <com.makeramen.RoundedImageView
+                android:id="@+id/row_icon"
+                android:layout_width="@dimen/roundimage_width"
+                android:layout_height="@dimen/roundimage_height"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:padding="10dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/syl_applaunchericon"
+                app:border_color="#cccccc"
+                app:border_width="1dip"
+                app:corner_radius="100dip" />
+
+            <!--
+    <TextView
+       android:id="@+id/txt_name" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+           android:text="Leandro Lisboa"
+             android:textColor="@color/white"
+             android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+        >    
+        
+        
+        </TextView>
+
+            -->
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_firstname"
+        android:layout_width="@dimen/phonecontactnamewidth"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/rel_roundimage"
+        android:layout_weight="1"
+        android:text="Name"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/txt_userid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/txt_firstname"
+        android:text=""
+        android:visibility="invisible"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+        <TextView
+        android:id="@+id/txt_mobilenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/txt_userid"
+        android:text="9090909"
+        android:visibility="invisible"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+                <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/txt_userid"
+        android:text="9090909"
+        android:visibility="invisible"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/img_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/txt_userid"
+        android:visibility="invisible"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/tick_icon" >
+    </ImageView>
+
+</RelativeLayout><!-- From: file:/D:/SYL-Backup-18-dec-2015/SYL-backup-12-oct-2015/app/src/main/res/layout/sylphonecontacts_eachrow.xml -->

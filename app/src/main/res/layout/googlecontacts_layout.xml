@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground">
+    <EditText
+    android:id="@+id/etxt_searchfavourites"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/etxt_searchbg"
+    android:drawableLeft="@drawable/etxt_searchicon"
+android:paddingLeft="20dp"
+android:singleLine="true"
+android:drawablePadding="10dp"
+android:hint="Search Your Favourites"
+android:textColor="@color/white"
+android:maxLength="30"
+   android:layout_alignParentTop="true"
+   android:visibility="invisible"
+   android:imeOptions="actionDone"
+    >
+</EditText>
+<com.webcamconsult.syl.fragments.RefreshableListView
+        android:id="@+id/listview_gmailcontacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     android:layout_below="@id/etxt_searchfavourites"
+        
+        />
+  
+<Button
+    android:id="@+id/btn_googlecontacts"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_btngoogle"
+    android:text="Connect with Google"
+ android:gravity="right|center_vertical"
+android:paddingRight="18dp"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="80dp"
+    >
+  
+</Button>
+</RelativeLayout>

@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground" >
+
+    <RelativeLayout
+        android:id="@+id/relout_reschedule"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color_newrequestappointment_header"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_newappointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Request New Appointment"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+           >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/img_backarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:onClick="navigatetheactionbarbackButton"
+            android:src="@drawable/back_arrow" >
+        </ImageView>
+    </RelativeLayout>
+ <ScrollView
+        android:id="@+id/scr_full"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relout_reschedule"
+        android:layout_marginBottom="10dp" >
+  
+
+        <RelativeLayout
+            android:id="@+id/relout_outer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relout_reschedule" >
+
+            <RelativeLayout
+                android:id="@+id/relout_importcontact"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/color_newrequestappointment" >
+
+                <TextView
+                    android:id="@+id/txt_importcontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="18sp"
+                    android:text="@string/import_contact"
+                    android:textColor="@color/white"
+                    >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/img_rightarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/rightarrow" >
+                </ImageView>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/liout_appointmenttopic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relout_importcontact"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:hint="Appointment Topic"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:background="@drawable/tablet_appoinmenttopicbg"
+                android:orientation="horizontal" 
+                android:paddingLeft="2dp"
+                android:singleLine="true"
+                android:textSize="18sp"
+                android:textCursorDrawable="@drawable/cursordrawable"
+                >
+
+  
+            </EditText>
+
+            <EditText
+                android:id="@+id/liout_appointmentdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/liout_appointmenttopic"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                      android:paddingLeft="2dp"
+                   android:textColor="@color/white"
+                 android:background="@drawable/tablet_appoinmenttopicbg"
+                android:orientation="horizontal"
+          android:hint="Appointment  Description"
+                android:textColorHint="@color/white"
+                   android:singleLine="true"
+                   android:textSize="18sp"
+                android:textCursorDrawable="@drawable/cursordrawable"
+           >
+            </EditText>
+
+            <RelativeLayout
+                android:id="@+id/relout_priority1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/liout_appointmentdescription"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+               android:background="@drawable/tablet_appoinmenttopicbg">
+
+                <TextView
+                    android:id="@+id/txt_priority1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="@string/priority1"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <RelativeLayout
+                    android:id="@+id/relout_chooseoption1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/tablet_chooseoptionbg" >
+
+                    <ImageView
+                        android:id="@+id/img_selectimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/tablet_chooseicon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txt_chooseoption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@id/img_selectimage"
+                        android:freezesText="true"
+                        android:text="Choose priority 1"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" >
+                    </TextView>
+                </RelativeLayout>
+                <!--
+                <Spinner
+                    android:id="@+id/spinner_priority"
+                    android:layout_width="@dimen/reqnew_spinnerwidth"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"
+                    android:background="@drawable/priority_bg" />
+
+                -->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relout_priority2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relout_priority1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+      android:background="@drawable/tablet_appoinmenttopicbg">
+
+                <TextView
+                    android:id="@+id/txt_priority2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="@string/priority2"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <RelativeLayout
+                    android:id="@+id/relout_chooseoption2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                     android:background="@drawable/tablet_chooseoptionbg"  >
+
+                    <ImageView
+                        android:id="@+id/img_selectimage2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/tablet_chooseicon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txt_chooseoption2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@id/img_selectimage2"
+                        android:freezesText="true"
+                        android:text="Choose priority 2"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" >
+                    </TextView>
+                </RelativeLayout>
+
+                <!--
+                <Spinner
+                    android:id="@+id/spinner_priority2"
+                    android:layout_width="@dimen/reqnew_spinnerwidth"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/priority_bg" />
+
+                -->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relout_priority3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relout_priority2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+       android:background="@drawable/tablet_appoinmenttopicbg">
+
+                <TextView
+                    android:id="@+id/txt_priority3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="@string/priority3"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <RelativeLayout
+                    android:id="@+id/relout_chooseoption3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/tablet_chooseoptionbg"   >
+
+                    <ImageView
+                        android:id="@+id/img_selectimage3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/tablet_chooseicon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txt_chooseoption3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@id/img_selectimage3"
+                        android:freezesText="true"
+                        android:text="Choose priority 3"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" >
+                    </TextView>
+                </RelativeLayout>
+                <!--
+                <Spinner
+                    android:id="@+id/spinner_priority3"
+                    android:layout_width="@dimen/reqnew_spinnerwidth"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/priority_bg" />
+
+                -->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_preferred"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relout_priority3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                  android:background="@drawable/tablet_appoinmenttopicbg">
+
+                <TextView
+                    android:id="@+id/txt_preffereddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="@string/preffered"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/liout_preferedtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/tablet_preferedtimebg"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/pref_timeicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/tablet_timeicon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/pref_txttime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        android:freezesText="true"
+                        android:text="Time"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liout_prefereddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@id/liout_preferedtime"
+                    android:background="@drawable/tablet_preferreddatebg"
+                    android:onClick="showDatePickerDialog"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/pref_dateicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                      android:src="@drawable/tablet_datetimeicon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/preftxt_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:freezesText="true"
+                        android:layout_marginLeft="2dp"
+                        android:text="Preferred Date"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" >
+                    </TextView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_optiondate1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rel_preferred"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                  android:background="@drawable/tablet_appoinmenttopicbg">
+
+                <TextView
+                    android:id="@+id/txt_option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="Option1"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/liout_optiontime1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                   android:background="@drawable/tablet_preferedtimebg"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/img_timeicon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/tablet_timeicon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txt_optiontime1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="2dp"
+                        android:freezesText="true"
+                        android:text="@string/time"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liout_optiondate1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@id/liout_optiontime1"
+                      android:background="@drawable/tablet_preferreddatebg"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/img_optiondate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                            android:src="@drawable/tablet_datetimeicon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txt_optiondate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:freezesText="true"
+                        android:layout_marginLeft="2dp"
+                        android:text="Option 1 Date"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" >
+                    </TextView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_optiondate2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rel_optiondate1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+               android:background="@drawable/tablet_appoinmenttopicbg">
+
+                <TextView
+                    android:id="@+id/txt_optiondatehead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="Option2"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/liout_preferedtime2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                         android:background="@drawable/tablet_preferedtimebg"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/img_optiontimeicon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                       android:src="@drawable/tablet_timeicon"  >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txt_optiontime2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="2dp"
+                        android:freezesText="true"
+                        android:text="Time"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liout_optiondate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@id/liout_preferedtime2"
+                     android:background="@drawable/tablet_preferreddatebg"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/img_optiondateicon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:src="@drawable/tablet_datetimeicon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txtoptiondate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:freezesText="true"
+                        android:text="Option 2 Date"
+                        android:layout_marginLeft="2dp"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" >
+                    </TextView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_reschedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rel_optiondate2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/selector_tablet_btnsignin"
+                android:onClick="doRequestNewAppointment"
+                android:text="Schedule Appointment"
+                android:textColor="@color/white" 
+                android:textSize="18sp">
+            </Button>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

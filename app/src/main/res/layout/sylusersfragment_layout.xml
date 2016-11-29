@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/appbackground">
+<EditText
+    android:id="@+id/etxt_searchfavourites"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/etxt_searchbg"
+    android:drawableLeft="@drawable/etxt_searchicon"
+android:paddingLeft="20dp"
+android:singleLine="true"
+android:drawablePadding="10dp"
+android:hint="Search Your Favourites"
+
+android:maxLength="30"
+android:textColor="#666666"
+android:imeOptions="actionDone"
+    android:textCursorDrawable="@drawable/cursordrawable_contacts"
+    >
+</EditText>
+<com.webcamconsult.syl.swiperefresh.SwipeRefreshLayout
+    android:id="@+id/swipe_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/etxt_searchfavourites"
+    >
+        <ListView
+        android:id="@+id/listView_sylusers"
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+    </ListView>
+    </com.webcamconsult.syl.swiperefresh.SwipeRefreshLayout>
+</RelativeLayout>

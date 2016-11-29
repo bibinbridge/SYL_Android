@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical" 
+  android:background="#683c9e"
+    >
+   <TextView
+     android:id="@+id/txt_countrycode"  
+     android:layout_width="wrap_content"  
+      android:layout_height="wrap_content"
+      android:text="Test" 
+    android:layout_centerVertical="true"
+    android:textColor="@color/white"
+    android:layout_marginLeft="6dp"
+       > 
+</TextView>
+</RelativeLayout>
+<!-- From: file:/D:/SYL-Backup-18-dec-2015/SYL-backup-12-oct-2015/app/src/main/res/layout/syl_spinnereachitem.xml -->

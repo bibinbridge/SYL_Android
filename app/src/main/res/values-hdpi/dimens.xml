@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Values HDPI -->
+<resources>
+   <dimen name="syllogo">28dp</dimen>  
+    <dimen name="menulistitem_width">50dp</dimen>  
+    <!-- Signin Screen Values -->
+     <dimen name="syllogo_margintop">60dp</dimen>
+        <!-- Values Signinlayout layout -->
+  <dimen name="signup_signupmargintop">20dp</dimen>
+        <!-- Values Request new appointment layout -->
+   <dimen name="reqnew_preflayout">120dp</dimen>
+     <dimen name="reqnew_spinnerwidth">200dp</dimen>
+             <!-- Values Appointment Listing each row -->
+           <dimen name="listingeachrow_margintop">16dp</dimen>
+                <!-- Values Actionbarcustomlayout -->
+      <dimen name="title_marginleft">60dp</dimen>
+            <!-- Values request new appointment -->
+                  <dimen name="relative_chooseoption">200dp</dimen>
+<dimen name="phonecontactnamewidth">120dp</dimen>
+    <dimen name="sylsignin_margintop">40dp</dimen>
+</resources>

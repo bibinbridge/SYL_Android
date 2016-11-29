@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+</LinearLayout>
+<!-- From: file:/D:/SYL-Backup-18-dec-2015/SYL-backup-12-oct-2015/app/src/main/res/layout-sw720dp/fragment_settings.xml -->

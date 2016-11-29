@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/SYL-Backup-18-dec-2015/SYL-backup-12-oct-2015/app/src/main/res/values-mdpi/dimens.xml -->
+    <eat-comment/>
+    <dimen name="roundimage_height">80dp</dimen>
+    <dimen name="roundimage_width">80dp</dimen>
+    <dimen name="signin_margintop">60dp</dimen>
+    <dimen name="syllogo">120dp</dimen>
+    <dimen name="syllogo_margintop">60dp</dimen>
+    <dimen name="text_versionsizetab">40sp</dimen>
+</resources>

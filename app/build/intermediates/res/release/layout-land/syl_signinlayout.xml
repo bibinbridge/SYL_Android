@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/appbackground"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img_syllogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/syllogologin" >
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/rel_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_syllogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp" >
+
+        <LinearLayout
+            android:id="@+id/liout_signinbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/signbox_bg"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/etxt_email"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/etxt_background"
+                android:drawableLeft="@drawable/signin_emailicon"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                  android:textColorHint="#FFFFFF"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textCursorDrawable="@drawable/cursordrawable">
+            </EditText>
+
+            <EditText
+                android:id="@+id/etxt_password"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/password_bg"
+                android:drawableLeft="@drawable/signin_passwordicon"
+                android:drawablePadding="14dp"
+                android:hint="Password"
+                  android:textColorHint="#FFFFFF"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textCursorDrawable="@drawable/cursordrawable">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liout_loginbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/liout_signinbox"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_btnsignin"
+                android:onClick="userSignin"
+                android:text="@string/text_btnsignin"
+                android:textColor="@color/white" >
+            </Button>
+
+            <TextView
+                android:id="@+id/txt_forgotpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/text_forgotpassword"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:background="@drawable/textview_selector">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/liout_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/liout_loginbtn"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/btn_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btnfacebook"
+                android:text="Facebook Login"
+                android:textColor="@color/white"
+                android:onClick="doFacebookLogin"
+                >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liout_newuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/liout_facebook"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/txt_newuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/text_newhere"
+                android:textColor="@color/white"
+                android:textSize="16sp" >
+            </TextView>
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_btnsignin"
+                android:onClick="navigatetoSignupScreen"
+                android:text="@string/text_signup"
+                android:textColor="@color/white" >
+            </Button>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+    </ScrollView><!-- From: file:/D:/SYL-Backup-18-dec-2015/SYL-backup-12-oct-2015/app/src/main/res/layout-land/syl_signinlayout.xml -->

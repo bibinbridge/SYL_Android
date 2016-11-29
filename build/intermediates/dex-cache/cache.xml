@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.1.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a78bfd2ec508b123ee7c03f4006ba7996ef9a8dc">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-f580583c6df82146a2e025fcd04bc6174ec54afa.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5ea948d825957be6c4358c48422bee60eef2d487">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-f5946cc70031b475207a122874d56c0e97d380f3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sandeep\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\picasso-2.5.2-5b470f2f7b861033cb578b1e1e8213a17b488698.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\libs\gdata-contacts-meta-3.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="bbdd0ba0a2249ba71d0efe237674e7e87d0228cb">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\gdata-contacts-meta-3.0-9b7e5c9fb554e120e5029cfba61d11015bb68187.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e35fae1b377c23aa5fd2d309a190c2d0f73d54ec">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-2ee7393fd3219e13551e2f9eec41954b544825cf.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b48d5c51a9a9e329005106b4667f54948de4d4d8">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-8016f5150c39de04a8582afb50c9a0869b654846.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\libs\httpmime-4.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f6b9ce4485869cc314171c554a436e6121783fbe">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\httpmime-4.1-2b0e7c324e11560f85c264f598482da2894f4d3c.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7215ac1f2fca947b9415a6ee2a1bf991364aab24">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-843245f5132dc1c64ef4dc08dbf7d91620d368f4.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.2\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e99413cdc93bd7b001d312a4a33d25ac21042f69">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-fa6e2889f1593ca560da1c0992cfcdb1e119e366.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="59652857a825fff0de62166fca1bc9553cc01abb">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-6d192053452cddc86a41bb11dcc61618a9a36d4c.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\beta\1.1.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b7a78990c10481f43cb4909f535ef4f11e60f1ab">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-fb734b417d7d4f6c6e382c331bcfb58915e54733.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\libs\gdata-core-1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6ff0dba2ad4e59fdda638b00d6773f3e48b61e16">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\gdata-core-1.0-b36e95f926b6afa9b8f4c6df3e842b3a5a1964a4.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.actionbarsherlock\actionbarsherlock\4.4.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="af64527b748983a75de9c0756e9768b56b240a49">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-509eb37404f4b9cabf220abb3c44dfc991dc0ed7.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a0ce76dfaccbfbd6c551ed2174280aaabe60fe47">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-fc9fc0e679a4090a16fab1f9d00bd1c5b1896189.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fe3e0c6de7cceed888b277487238b6af9a1cc299">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-ae56277be46c06f9b7d6539086e29737da805235.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\libs\Parse-1.7.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="87c45f9f66da531a65f065ee32f603c7e6db1528">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\Parse-1.7.1-c50ed3dc9ef5e2298992473dcc647ea3c71e8bdd.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="565a01f90f1529f73362707c4c185d0623a68782">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-f231f63857c6d6909509d115d114dbb3cac0debf.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="bb36004beb02b69562cbec9aa7d6a3cf16bf5d1b">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-fa0019a7b4bda9e9dcd27bcfab7b9b71eaebf398.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics\2.5.2\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0c7f9fb9a729166c69fa585e01be2fe8fab4f45c">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-e1244f97a07eb0d8af9aae37388fe06f51b135fb.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\libs\bolts-android-1.1.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e61e3dfc57eaa5c97f9e7061db5608fc7d02d39e">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.3-d2ed5b027cfd4595ffd145a41c64a43ebf96e43b.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\SYL-backup-12-oct-2015.libs\library1\1.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0fb9067776a0a959d6cdcd5edf7cdac2580d5654">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-bdfbc585782370473dbffdd7220492e59c3f7c28.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-b2f945e0b4018249cdb134290b6882a906134471.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-78b23a84ae4b69abdc2e00b944bd6afc12fee937.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f2f7ec211ce4d244ee97a57523eeb4526dc3cf8a">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-618c9714d213674b3693ce3ac4fb18eb1b68f675.jar" />
+    </item>
+    <item
+        jar="C:\AndroidSDK\sdk1\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-f75baa69eaff069360b5e47bae1630d87e8ca2fa.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0180d031a7b54dabb93b4af3869468b55dc938bd">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-41af6809e8c705afaee20476c58e0dae6bbe5b63.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics-core\2.3.5\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d18ba1d0eff55680fdf9a35f70a6091e4bc1adcb">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-8d285a2ddb0090dda3b430612085e48696e16766.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b2c07cdb814fe988ad05f7b4d767a841514a5991">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-8c8b4964cad841eab7d61a50edf9ec9f3ee18691.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3b4ff5c39dace8f3b4ab4cab8191785547a0815f">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-7865c970ed0a47ac00cf1726cf90596acdc335bb.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e5bf453b070c1e39297986144960e45afa0fdfad">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-8da5fdea6aae29ea60c5314bfe422ac4f813ef06.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sandeep\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\gson-2.3.1-6fc9d16921353a29250b6cbb67faddaf304ee694.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0708ef60917bf94913fe9ef972a655b99462dca7">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-ba7845531ff94b8c6d9d1210763f942d031af87f.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4f4fe3c23776540625f3c2844152a7510fddf9f1">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-6c57ed762c689d7604fd0e05f6e80f6cfb02cb06.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3988694bf9d8186ff97ad5cdfa4ed88b5010fe08">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-7a2543d9c895570f8f162c55475eec272d523ba0.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.makeramen\roundedimageview\1.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="79eeffd918cb80900ca0738b3113fa82ff8c48d5">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-cb0f502cd341053cd57591434454c05779ac9b3d.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9c9dea9e85aceb09d95df5e6f7bc8a43fc286068">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-04ce09c431491969fedfd7dd2fff3e1aaa9cc0a5.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e5b9f5b0aa8dee788beb63d23832cb29ce771343">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-1589193b8b6a7a43d68242298f71ac13789bb188.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\libs\opentok-android-sdk-2.5.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="76ba9e2bfd18ad5383724159e99d175c3f03cd9f">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\opentok-android-sdk-2.5.0-210c943235e35ba5dfcc288d8b70ffee57f378f9.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.6\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fc82596d7f7683c8b3a7e5715a2ed5295c586887">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-c7b25c4476c8166ff4a46d8a569a1a3ec24ca8c7.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\libs\gdata-contacts-3.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c18ad34f41a7591b1fec0770ba0fc0300bf5901e">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\gdata-contacts-3.0-08126fd7b8833c785ef7d351e8a4d78ec44c862e.jar" />
+    </item>
+    <item
+        jar="E:\SYL-backup-12-oct-2015\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6046e5cdaf799120b7c56a5a061d80e8854c4d34">
+        <dex dex="E:\SYL-backup-12-oct-2015\app\build\intermediates\pre-dexed\debug\classes-413362de6968495139bc14e5c962e162caf22f87.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_items">
+        <item >Appointments</item>
+        <item >Profile</item>
+        <item >Contacts</item>
+     
+        <item >Settings</item>
+        <item >Logout</item>
+
+       
+    </string-array>
+    
+    <array name="nav_drawer_icons">
+          <item>@drawable/appointments_icon</item>
+        <item>@drawable/profile_icon</item>
+        <item>@drawable/contact_icon</item>
+
+            <item>@drawable/settings_icon</item>
+        <item>@drawable/logout_icon</item>
+    
+
+    </array>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</resources>

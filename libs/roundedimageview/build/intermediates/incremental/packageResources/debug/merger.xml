@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\SYL-Backup-18-dec-2015\SYL-backup-12-oct-2015\libs\roundedimageview\res"><file path="D:\SYL-Backup-18-dec-2015\SYL-backup-12-oct-2015\libs\roundedimageview\res\values\attrs.xml" qualifiers=""><declare-styleable name="RoundedImageView">
+        <attr format="dimension" name="corner_radius"/>
+        <attr format="dimension" name="border_width"/>
+        <attr format="color" name="border_color"/>
+        <attr format="boolean" name="round_background"/>
+        <attr format="boolean" name="is_oval"/>
+        <attr name="android:scaleType"/>
+    </declare-styleable></file></source><source path="D:\SYL-Backup-18-dec-2015\SYL-backup-12-oct-2015\libs\roundedimageview\build\generated\res\rs\debug"/><source path="D:\SYL-Backup-18-dec-2015\SYL-backup-12-oct-2015\libs\roundedimageview\build\generated\res\generated\debug"/></dataSet><dataSet config="debug"><source path="D:\SYL-Backup-18-dec-2015\SYL-backup-12-oct-2015\libs\roundedimageview\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="RoundedImageView"><attr format="dimension" name="corner_radius"/><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/><attr format="boolean" name="round_background"/><attr format="boolean" name="is_oval"/><attr name="android:scaleType"/></declare-styleable></configuration></mergedItems></merger>

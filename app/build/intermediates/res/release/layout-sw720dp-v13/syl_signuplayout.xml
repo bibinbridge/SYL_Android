@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground" >
+
+    <RelativeLayout
+        android:id="@+id/relout_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/tablet_actionbarbg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_backarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/tablet_actionbarbackarrow" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/text_signuptitle"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relout_heading"
+        android:layout_marginBottom="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/rel_userdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relout_heading" >
+
+            <ImageView
+                android:id="@+id/img_userimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+               android:layout_marginTop="18dp"
+                android:src="@drawable/tablet_addphotoicon" >
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/liout_userdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_userimage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/sylsignup_bg"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/etxt_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/tablet_signupbg"
+                    android:drawableLeft="@drawable/tablet_nameicon"
+                    android:drawablePadding="14dp"
+                    android:hint="Name"
+                      android:textColorHint="#FFFFFF"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:maxLength="30"
+                          android:textSize="22sp"
+                    android:textCursorDrawable="@drawable/cursordrawable">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/etxt_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/tablet_signupbg"
+                     android:drawableLeft="@drawable/tablet_emailicon"
+                    android:drawablePadding="14dp"
+                    android:hint="Email"
+                    android:singleLine="true"
+                      android:textColorHint="#FFFFFF"
+                    android:textColor="@color/white"
+                        android:textSize="22sp"
+                    android:textCursorDrawable="@drawable/cursordrawable">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/etxt_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/tablet_signupbg"
+                android:drawableLeft="@drawable/tablet_passwordicon2"
+                    android:drawablePadding="14dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                      android:textColorHint="#FFFFFF"
+                    android:textColor="@color/white"
+                     android:textSize="22sp"
+                    android:textCursorDrawable="@drawable/cursordrawable">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/etxt_confirmpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/tablet_signupbg"
+                 android:drawableLeft="@drawable/tablet_passwordicon2"
+                    android:drawablePadding="14dp"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                      android:textColorHint="#FFFFFF"
+                    android:textColor="@color/white"
+                         android:textSize="22sp"
+                    android:textCursorDrawable="@drawable/cursordrawable">
+                </EditText>
+                <EditText
+                    android:id="@+id/etxt_facetimeid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/tablet_signupbg"
+                    android:drawableLeft="@drawable/tablet_facetimeicon"
+                    android:drawablePadding="14dp"
+                    android:hint="Facetime ID"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textCursorDrawable="@drawable/cursordrawable">
+                </EditText>
+                <EditText
+                    android:id="@+id/etxt_skypeid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/tablet_signupbg"
+                          android:drawableLeft="@drawable/tablet_skypeicon"
+                    android:drawablePadding="14dp"
+                    android:hint="Skype ID"
+                    android:singleLine="true"
+                      android:textColorHint="#FFFFFF"
+                    android:textColor="@color/white"
+                android:textSize="22sp"
+                    android:textCursorDrawable="@drawable/cursordrawable">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/etxt_hangouticon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/tablet_signupbg"
+               android:drawableLeft="@drawable/tablet_hangouticon"
+                    android:drawablePadding="14dp"
+                    android:hint="Hangout ID"
+                    android:singleLine="true"
+                      android:textColorHint="#FFFFFF"
+                    android:textColor="@color/white"
+                        android:textSize="22sp"
+                    android:textCursorDrawable="@drawable/cursordrawable">
+                </EditText>
+
+                <LinearLayout
+                    android:id="@+id/etxt_countrycode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/tablet_signupbg"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/img_countrcodeicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                          android:src="@drawable/tablet_countrycodeicon"  >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txt_countrycode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="14dp"
+                              android:textSize="22sp" 
+                                   android:textColorHint="#FFFFFF"
+                        android:freezesText="true"
+                        android:hint="Country Code"
+                        android:textColor="@color/white" >
+                    </TextView>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etxt_mobilenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/tablet_mobilebg"
+            android:drawableLeft="@drawable/tablet_mobileicon"
+                    android:drawablePadding="14dp"
+                    android:hint="Mobile No"
+                    android:inputType="number"
+                    android:singleLine="true"
+                      android:textColorHint="#FFFFFF"
+                    android:textColor="@color/white"
+                         android:textSize="22sp"
+                    android:textCursorDrawable="@drawable/cursordrawable">
+                </EditText>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/liout_userdetails"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/selector_tablet_btnsignin"
+         android:onClick="doUserSignup"
+                android:text="@string/text_signup"
+                  android:textSize="26sp" 
+                android:textColor="@color/white" >
+            </Button>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/D:/SYL-Backup-18-dec-2015/SYL-backup-12-oct-2015/app/src/main/res/layout-sw720dp/syl_signuplayout.xml -->

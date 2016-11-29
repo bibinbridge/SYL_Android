@@ -1,0 +1,150 @@
+-injars 'D:\SYL-Backup-18-dec-2015\SYL-backup-12-oct-2015\app\build\intermediates\multi-dex\release\allclasses.jar'
+-outjars 'D:\SYL-Backup-18-dec-2015\SYL-backup-12-oct-2015\app\build\intermediates\multi-dex\release\componentClasses.jar'
+
+-libraryjars 'C:\AndroidSDK\sdk1\build-tools\21.1.2\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontpreverify
+-dontwarn
+-printconfiguration 'D:\SYL-Backup-18-dec-2015\SYL-backup-12-oct-2015\app\build\intermediates\multi-dex\release\components.flags'
+
+
+-keep class android.support.multidex.MultiDexApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class com.webcamconsult.syl.activities.SYLSplashScreenActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.activities.SYLFragmentChangeActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.activities.SYLBaseActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.activities.SYLSigninActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.activities.SYLSignupActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.activities.SYLVerificationCodeActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.activities.SYLForgotpasswordActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.activities.SYLHistoryAppointmentsActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.guidednavigation.SYLGuidedContactsActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.guidednavigation.SYLGuidedAppointmentsListActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.guidednavigation.SYLGuidedNewAppointmentActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.activities.SYLRescheduleappointmentActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.activities.SYLRequestnewappointmentActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.activities.SYLOpentokcallSenderActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.activities.SYLConfirmedRequestAppointmentActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.activities.SYLTodaysAppointmentDetailActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.activities.SYLRequestReceivedAppointmentActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.activities.SYLRequestSendActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.activities.SYLCaneledRequestDetailedActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.activities.SYLFinishedAppointmentDetailActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.opentok.SYLOpentokAcceptRejectActivity {
+    <init>();
+}
+
+-keep class com.facebook.FacebookActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.gcm.GcmBroadcastReceiver {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.gcm.SYLGCMNotificationIntentService {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.opentok.send.UIActivity2 {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.opentok.send.HelloWorldActivitySender {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.opentok.send.HelloWorldActivityReceiver {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.gcm.NotificationReceiverActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.opentok.UIActivity {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.opentok.ClearNotificationService {
+    <init>();
+}
+
+-keep class com.webcamconsult.syl.gcm.CallBroadcastReceiver {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}

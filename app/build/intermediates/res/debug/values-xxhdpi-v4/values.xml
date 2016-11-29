@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/SYL-Backup-18-dec-2015/SYL-backup-12-oct-2015/app/src/main/res/values-xxhdpi/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="listingeachrow_margintop">12dp</dimen>
+    <dimen name="margin20">20dp</dimen>
+    <dimen name="margin5">8dp</dimen>
+    <dimen name="margin8">8dp</dimen>
+    <dimen name="margin800">800dp</dimen>
+    <dimen name="margineighty">80dp</dimen>
+    <dimen name="marginfifty">50dp</dimen>
+    <dimen name="marginten">10dp</dimen>
+    <dimen name="padding15">15dp</dimen>
+    <dimen name="phonecontactnamewidth">180dp</dimen>
+    <dimen name="requestappointmentheadersize">18sp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="signin_lioutmargintop">20dp</dimen>
+    <dimen name="signin_margintop">40dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="sylhistorywidth">60dp</dimen>
+    <dimen name="syllogo">90dp</dimen>
+    <dimen name="syllogo_margintop">90dp</dimen>
+    <dimen name="sylsignin_margintop">60dp</dimen>
+    <dimen name="textSize16">16sp</dimen>
+    <dimen name="textSize20">20sp</dimen>
+    <dimen name="topbar">50dp</dimen>
+    <dimen name="vefifymobicon">15dp</dimen>
+    <dimen name="verifyscreenbuttonheight">40dp</dimen>
+    <dimen name="verifyscreenbuttonwidth">100dp</dimen>
+    <dimen name="versionname_textsize">18sp</dimen>
+    <integer name="num_cols">1</integer>
+</resources>

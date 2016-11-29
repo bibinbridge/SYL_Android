@@ -1,0 +1,79 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    signingConfigs {
+    }
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+    defaultConfig {
+        applicationId "syl.webcamconsult.com.sysg"
+        minSdkVersion 13
+        targetSdkVersion 21
+        versionCode 3
+        versionName "1.2"
+        multiDexEnabled true
+    }
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+        }
+    }
+
+    sourceSets {
+        main {
+            jni.srcDirs = []
+            jniLibs.srcDir 'src/main/jniLibs'
+        }
+    }
+
+}
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':libs:library1')
+    compile project(':libs:roundedimageview')
+    compile files('libs/gdata-contacts-3.0.jar')
+    compile files('libs/gdata-core-1.0.jar')
+    compile files('libs/httpmime-4.1.jar')
+    compile files('libs/Parse-1.7.1.jar')
+    compile files('src/main/libs/opentok-android-sdk.jar')
+    compile 'com.google.android.gms:play-services:7.3.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.parse.bolts:bolts-android:1.1.3'
+    compile 'com.android.support:multidex:1.0.0'
+
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') {
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+        exclude group: 'com.parse.bolts', module: 'bolts-android'
+        transitive = true;
+    }
+
+/*
+    compile ('com.facebook.android:facebook-android-sdk:4.1.0'){
+
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+        exclude group: 'com.parse.bolts', module: 'bolts-android'
+    }
+    */
+
+    compile ('com.facebook.android:facebook-android-sdk:4.1.1'){
+
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+        exclude group: 'com.parse.bolts', module: 'bolts-android'
+    }
+
+}

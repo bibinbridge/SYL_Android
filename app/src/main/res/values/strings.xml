@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SeeYouLater</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="changing_fragments">Changing Fragments</string>
+
+    <!-- verify mobile -->
+    <string name="VerifyMobileNumber">Verify mobile number</string>
+    <string name="EnterVerificationCode">Enter Verification Code</string>
+    <string name="Submit">Submit</string>
+    <string name="Resend">Resend</string>
+    <string name="SuccessfullyVerified">Successfully Verified</string>
+    <string name="ok">OK</string>
+    <!-- Splashscreen Strings -->
+    <string name="versionname">Version 1.01</string>
+    <!-- Signin Screen Strings -->
+    <string name="text_btnsignin">Login</string>
+    <string name="text_forgotpassword">Forgot Password?</string>
+    <string name="text_newhere">New Here?</string>
+    <string name="text_signup">Signup</string>
+    <!-- Forgot Password Screen -->
+    <string name="text_forgotpasswordheading">Forgot Password</string>
+    <string name="text_enteryouremail">Enter Your Email</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_reset">Reset</string>
+
+    <!-- Signup screen Screen -->
+    <string name="text_signuptitle">Sign Up</string>
+    <string name="AppointmentTopic">Appointment Topic</string>
+    <string name="AppointmentHeading">Appointment Heading</string>
+    <string name="AppointmentDescribtion">Description:-</string>
+    <string name="MobileNumber">Mobile Number</string>
+    <string name="SkypeID">Skype ID</string>
+    <string name="Appointment">Appointment</string>
+    <string name="YourAppointmentHasBeenResheduled">Your appointment has been rescheduled</string>
+    <string name="Cancel">Cancel</string>
+    <string name="YourAppointmentHasBeenConfirmed">Your appointment has been confirmed</string>
+    <string name="mobileno_hint">Mobile No</string>
+    <string name="country_code">Country Code</string>
+    <string name="hangout_id">Hangout ID</string>
+    <string name="skype_id">Skype ID</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="username">Name</string>
+      <string name="imagepath_alertmessage">Not getting image path correctly Plase select Another image</string>
+
+    <!-- SYL Request new Appointment Screen -->
+    <string name="import_contact"> Import One Contact</string>
+
+    <string name="appointment_topic">Appointment Topic</string>
+    <string name="priority1">Priority 1</string>
+    <string name="priority2">Priority 2</string>
+    <string name="priority3">Priority 3</string>
+    <string name="preffered">Preferred</string>
+    <string name="time">Time</string>
+    <string name="network_alertmessage">Please check your network connection</string>
+<string name="select">Select</string>
+<!-- <string name="app_id">434162763404162</string>-->
+	<!-- <string name="app_id">197574013719352</string>  -->
+	
+	<string name="app_id">1457482194517216</string>
+	
+	
+	<!--  Opentok Strings                                           -->
+	
+	   <string name="endCall2">End</string>
+	 <string name="archivingOff">Archiving off</string>
+	    <string name="archivingOn">Archiving on</string>
+	<string name="notification">Ongoing call</string>
+	    <string name="audioOnly">Audio only</string>
+	        <string name="clearNotificationService">Clear Notification</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_test">TestActivity</string>
+	        
+	        <string name="appointment_history">Appointment History</string>
+
+    <string name="deleteallhistory">Delete All History</string>
+	        
+	        
+</resources>

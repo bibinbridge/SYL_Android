@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/etxt_searchfavourites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/etxt_searchbg"
+        android:drawableLeft="@drawable/etxt_searchicon"
+        android:drawablePadding="10dp"
+        android:hint="Search Your Phone Contacts"
+        android:imeOptions="actionDone"
+        android:maxLength="30"
+        android:paddingLeft="20dp"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/cursordrawable_contacts"
+    android:textColor="#666666">
+    </EditText>
+
+<com.webcamconsult.syl.swiperefresh.SwipeRefreshLayout
+    android:id="@+id/swipe_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/etxt_searchfavourites"
+    >
+        <ListView
+        android:id="@+id/listview_phonecontacts"
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+    </ListView>
+    </com.webcamconsult.syl.swiperefresh.SwipeRefreshLayout>
+
+
+</RelativeLayout>

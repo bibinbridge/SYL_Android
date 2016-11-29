@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rel_full"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"  
+    >
+<ScrollView
+
+  android:layout_width="match_parent"  
+android:background="@color/slidingmenu_background"
+   android:layout_height="match_parent" 
+android:id="@+id/scr"
+
+    
+    >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/slidingmenu_background" 
+   >
+
+    <LinearLayout
+        android:id="@+id/liout_profileimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/tablet_leftslidingmenutopbar"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:id="@+id/liout_addphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true" >
+
+ 
+
+            <com.makeramen.RoundedImageView
+                android:id="@+id/img_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+            
+                android:padding="10dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/syl_applaunchericon"
+                app:border_color="#cccccc"
+                app:border_width="1dip"
+                app:corner_radius="100dip" />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:text="Leandro Lisboa"
+            android:textColor="@color/white"
+            android:textSize="24sp" >
+        </TextView>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/liout_profileimage"
+        android:background="@color/slidingmenu_background" />
+    
+
+ 
+
+</RelativeLayout>
+
+
+
+
+</ScrollView>
+
+
+
+
+</RelativeLayout>
+
+
+<!-- From: file:/D:/SYL-Backup-18-dec-2015/SYL-backup-12-oct-2015/app/src/main/res/layout-sw600dp/leftslidemenu_list.xml -->

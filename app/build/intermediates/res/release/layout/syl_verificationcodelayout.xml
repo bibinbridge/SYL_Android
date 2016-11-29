@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rel_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/forgot_headerbg" >
+
+        <ImageView
+            android:id="@+id/img_backarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_arrow" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Verify Code"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+   <ImageView
+       android:id="@+id/img_syllogo"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="60dp"
+       android:src="@drawable/syllogologin" 
+       android:layout_below="@id/rel_header"
+       > 
+    
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_syllogo"
+android:layout_marginTop="60dp"
+android:layout_centerHorizontal="true"
+
+>
+
+        <EditText
+            android:id="@+id/etVerifyMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/marginfifty"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/marginten"
+            android:layout_marginRight="@dimen/marginten"
+            android:background="@drawable/varifymobilenoedittextbg1"
+            android:textCursorDrawable="@drawable/cursordrawable"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="@string/EnterVerificationCode"
+android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/verificationtextsize">
+        </EditText>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etVerifyMobile"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/marginten" >
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="@dimen/verifyscreenbuttonwidth"
+                android:layout_height="@dimen/verifyscreenbuttonheight"
+                android:background="@drawable/selector_btnsubmit"
+                android:text="@string/Submit"
+                android:onClick="sendVerificationcode"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnResend"
+                android:layout_width="@dimen/verifyscreenbuttonwidth"
+                android:layout_height="@dimen/verifyscreenbuttonheight"
+                android:layout_alignBaseline="@+id/btnSubmit"
+                android:layout_marginLeft="@dimen/marginten"
+                android:layout_toRightOf="@+id/btnSubmit"
+                android:background="@drawable/selector_btnresend"
+                android:text="@string/Resend"
+                android:onClick="resendVerificationcode"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/D:/SYL-Backup-18-dec-2015/SYL-backup-12-oct-2015/app/src/main/res/layout/syl_verificationcodelayout.xml -->

@@ -1,0 +1,176 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  
+    > 
+ 
+ 
+ <RelativeLayout
+        android:id="@+id/rel_roundimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+        >
+       <LinearLayout
+        android:id="@+id/liout_addphoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        >
+
+    
+<!--     <ImageView -->
+<!--         android:id="@+id/imageView1" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentTop="true" -->
+        
+
+<!--         android:background="@drawable/index" /> -->
+    
+        <com.makeramen.RoundedImageView
+        android:id="@+id/row_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:padding="10dip"
+     android:src="@drawable/tablet_sylnouserimage"
+        android:scaleType="fitCenter"
+        app:corner_radius="100dip"
+        app:border_width="1dip"
+        app:border_color="#cccccc"
+      
+        
+        />
+
+   <!--     
+    <TextView
+       android:id="@+id/txt_name" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+           android:text="Leandro Lisboa"
+             android:textColor="@color/white"
+             android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+        >    
+        
+        
+        </TextView>
+        -->
+     
+   
+    </LinearLayout>
+    
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_namedate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rel_roundimage"
+        android:layout_centerVertical="true"
+        >
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/appointment_uparrow"
+            android:layout_centerVertical="true"
+            >
+        </ImageView>
+    
+ <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginTop="@dimen/listingeachrow_margintop"
+
+        android:layout_weight="1"
+ 
+        android:text="Name"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+ 
+  <TextView
+        android:id="@+id/lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin5"
+        android:layout_marginTop="@dimen/listingeachrow_margintop"
+        android:layout_toRightOf="@+id/name"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+   <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginTop="@dimen/margin5"
+
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="date"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/margin5"
+        android:layout_toRightOf="@+id/date"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="time"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvuserid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/tvappointmenttype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request Received"
+        android:visibility="invisible"
+         />
+
+    <ImageView
+        android:id="@+id/img_sidearrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/tablet_listingrightarrow"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        >
+    
+    </ImageView>
+    </RelativeLayout>
+  </RelativeLayout>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#900</color>
+    <color name="green">#090</color>
+
+
+    <color name="black">#000</color>
+    <color name="darkgreen">#006400</color>
+    <color name="darkred">#800000</color>
+    <color name="banana_yellow">#FFD12A</color>
+    <color name="slidingmenu_background">#212529</color>
+    <color name="slidingmenu_topbar">#272c30</color>
+    <color name="topbar">#663d9d</color>
+    <color name="newbuttontext">#673c9e</color>
+    <color name="color_newrequestappointment">#6447c5</color>
+    <color name="color_newrequestappointment_header">#663b9c</color>
+
+
+    <color name="grey">#363636</color>
+    <color name="dark_grey">#282828</color>
+    <color name="trans_dark_grey">#80282828</color>
+    <color name="white">#ffffff</color>
+    <color name="trans_white">#20ffffff</color>
+    <color name="trans">#00000000</color>
+    <color name="blue">#cc33b5e5</color>
+    <color name="black_grey">#ff1f1f1f</color>
+    <color name="init_gradient">#ff98CE00</color>
+    <color name="color0_gradient">#ff98CE00</color>
+    <color name="color1_gradient">#8098CE00</color>
+
+    <color name="btn_acceptgreen">#47c95d</color>
+    <color name="btn_rejecttred">#cc413a</color>
+    <color name="btn_pressedacceptgreen">#138808</color>
+    <color name="btn_pressedrejectred">	#FF1C00</color>
+    <color name="history_background">#e8e2f9</color>
+    <color name="history_textcolor">    #15102f</color>
+
+</resources>

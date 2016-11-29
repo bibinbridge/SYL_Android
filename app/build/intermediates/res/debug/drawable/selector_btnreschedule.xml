@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/reschedulebuttonpressed" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/reschedulebutton"></item>
+
+</selector>
+<!-- From: file:/D:/SYL-Backup-18-dec-2015/SYL-backup-12-oct-2015/app/src/main/res/drawable/selector_btnreschedule.xml -->

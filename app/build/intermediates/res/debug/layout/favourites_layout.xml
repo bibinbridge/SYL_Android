@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/appbackground">
+<EditText
+    android:id="@+id/etxt_searchfavourites"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/etxt_searchbg"
+    android:drawableLeft="@drawable/etxt_searchicon"
+android:paddingLeft="20dp"
+android:singleLine="true"
+android:drawablePadding="10dp"
+android:hint="Search Your Favourites"
+android:textColor="@color/white"
+android:maxLength="30"
+android:imeOptions="actionDone"
+
+    >
+</EditText>
+<com.webcamconsult.syl.fragments.RefreshableListView
+    android:id="@+id/list_favourites"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/etxt_searchfavourites"
+    />
+    
+</RelativeLayout><!-- From: file:/D:/SYL-Backup-18-dec-2015/SYL-backup-12-oct-2015/app/src/main/res/layout/favourites_layout.xml -->

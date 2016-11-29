@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tablet_sylappbg" >
+    
+    
+    <ImageView
+        android:id="@+id/img_syllogo"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/tablet_splashlogo"
+       android:layout_centerInParent="true"
+        >
+    
+    
+    </ImageView>
+    
+    
+    
+    <TextView
+        android:id="@+id/version_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/versionname"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+          android:textSize="@dimen/text_versionsizetab"
+        android:layout_marginBottom="8dp"
+        >
+        </TextView>
+   
+
+</RelativeLayout>
+<!-- From: file:/D:/SYL-Backup-18-dec-2015/SYL-backup-12-oct-2015/app/src/main/res/layout-sw600dp-port/syl_splashscreenlayout.xml -->

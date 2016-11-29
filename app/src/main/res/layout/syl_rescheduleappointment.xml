@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground" >
+
+    <RelativeLayout
+        android:id="@+id/relout_reschedule"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_newrequestappointment_header"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_newappointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Reschedule Appointment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/requestappointmentheadersize" >
+        </TextView>
+        <ImageView
+            android:id="@+id/img_backarrow"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/backarrow_padding"
+            android:focusable="false"
+            android:background="@drawable/actionbarbackbutton_background"
+            android:onClick="navigatetoConfirmedAppointmentsscreen"
+            >
+        
+        </ImageView>
+        
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scr_full"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relout_reschedule"
+        android:layout_marginBottom="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/relout_outer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relout_reschedule" >
+
+            <RelativeLayout
+                android:id="@+id/relout_importcontact"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/color_newrequestappointment" >
+
+                <TextView
+                    android:id="@+id/txt_importcontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/import_contact"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/requestappointmentheadersize" >
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/liout_appointmenttopic"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/relout_importcontact"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tablet_appoinmenttopicbg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_appointmenttopic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Appointment Topic"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/liout_appointmentdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/liout_appointmenttopic"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tablet_appoinmenttopicbg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_appointmentdescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Appointment Description"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp" >
+                </TextView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relout_priority1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/liout_appointmentdescription"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/appointment_topicbg" >
+
+                <TextView
+                    android:id="@+id/txt_priority1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="@string/priority1"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" >
+                </TextView>
+                             <RelativeLayout
+                    android:id="@+id/relout_chooseoption1"
+                     android:layout_width="@dimen/relative_chooseoption"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/preffereddate_bg" >
+
+                    <ImageView
+                        android:id="@+id/img_selectimage"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/chooseicon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txt_chooseoption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@id/img_selectimage"
+                        android:freezesText="true"
+                        android:text="Choose priority 1"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" >
+                    </TextView>
+                </RelativeLayout>
+<!-- 
+                <Spinner
+                    android:id="@+id/spinner_priority"
+                    android:layout_width="@dimen/reqnew_spinnerwidth"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/priority_bg" />
+            -->    
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relout_priority2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/relout_priority1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/appointment_topicbg" >
+
+                <TextView
+                    android:id="@+id/txt_priority2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="@string/priority2"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" >
+                </TextView>
+                              <RelativeLayout
+                    android:id="@+id/relout_chooseoption2"
+                       android:layout_width="@dimen/relative_chooseoption"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/preffereddate_bg" >
+
+                    <ImageView
+                        android:id="@+id/img_selectimage2"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/chooseicon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txt_chooseoption2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@id/img_selectimage2"
+                        android:freezesText="true"
+                        android:text="Choose priority 2"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" >
+                    </TextView>
+                </RelativeLayout>
+<!-- 
+                <Spinner
+                    android:id="@+id/spinner_priority2"
+                    android:layout_width="@dimen/reqnew_spinnerwidth"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/priority_bg" />
+                    -->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relout_priority3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/relout_priority2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/appointment_topicbg" >
+
+                <TextView
+                    android:id="@+id/txt_priority3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="@string/priority3"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" >
+                </TextView>
+             <RelativeLayout
+                    android:id="@+id/relout_chooseoption3"
+                android:layout_width="@dimen/relative_chooseoption"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/preffereddate_bg" >
+
+                    <ImageView
+                        android:id="@+id/img_selectimage3"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/chooseicon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txt_chooseoption3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@id/img_selectimage3"
+                        android:freezesText="true"
+                        android:text="Choose priority 3"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" >
+                    </TextView>
+                </RelativeLayout>
+                <!--                 
+                <Spinner
+                    android:id="@+id/spinner_priority3"
+                    android:layout_width="@dimen/reqnew_spinnerwidth"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/priority_bg" />
+               --> 
+                
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_preferred"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/relout_priority3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/appointment_topicbg" >
+
+                <TextView
+                    android:id="@+id/txt_preffereddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="@string/preffered"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/liout_preferedtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/prefered_timebg"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/pref_timeicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/time_icon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/pref_txttime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="11:00AM"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liout_prefereddate"
+                    android:layout_width="@dimen/reqnew_preflayout"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@id/liout_preferedtime"
+                    android:background="@drawable/preffereddate_bg"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/pref_dateicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:src="@drawable/date_icon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/preftxt_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="12/01/2015"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" >
+                    </TextView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_optiondate1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/rel_preferred"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/appointment_topicbg" >
+
+                <TextView
+                    android:id="@+id/txt_option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="Option1"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" >
+                </TextView>
+            <LinearLayout
+                    android:id="@+id/liout_optiontime1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/prefered_timebg"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/img_timeicon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/time_icon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txt_optiontime1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/time"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" >
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/liout_optiondate1"
+                    android:layout_width="@dimen/reqnew_preflayout"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="38dp"
+                    android:layout_toLeftOf="@id/liout_optiontime1"
+                    android:background="@drawable/preffereddate_bg"
+                    android:orientation="horizontal" 
+                    android:layout_marginRight="6dp">
+
+                    <ImageView
+                        android:id="@+id/img_optiondate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:src="@drawable/date_icon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txt_optiondate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Option 1 Date"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" >
+                    </TextView>
+                </LinearLayout>
+
+    
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_optiondate2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/rel_optiondate1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/appointment_topicbg" >
+
+                <TextView
+                    android:id="@+id/txt_optiondatehead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="Option2"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/liout_preferedtime2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/prefered_timebg"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/img_optiontimeicon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/time_icon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txt_optiontime2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        android:text="Time"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liout_optiondate2"
+                    android:layout_width="@dimen/reqnew_preflayout"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@id/liout_preferedtime2"
+                    android:background="@drawable/preffereddate_bg"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/img_optiondateicon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:src="@drawable/date_icon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txtoptiondate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Option 2 Date"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" >
+                    </TextView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_reschedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rel_optiondate2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/selector_btnnewreschedule"
+                android:text="Reschedule Appointment"
+                android:textColor="@color/white"
+                android:onClick="doRescheduleAppointment" >
+            </Button>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

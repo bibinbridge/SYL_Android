@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <RelativeLayout
+        android:id="@+id/subscriberview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:gravity="center_horizontal" >
+
+        <ProgressBar
+            android:id="@+id/loadingSpinner"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/publisherview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/testView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        >
+    </RelativeLayout>
+
+
+
+
+
+
+
+<RelativeLayout
+    android:id="@+id/rel_call"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+
+    >
+        <TextView
+            android:id="@+id/txt_incomingcall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calling..."
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textSize="22sp"
+    android:layout_marginTop="180dp"
+            >
+            </TextView>
+                                  <LinearLayout
+            android:id="@+id/liout_addphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_incomingcall"
+      android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+            >
+             <com.makeramen.RoundedImageView
+                android:id="@+id/row_icon"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:padding="10dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tablet_sylnouserimage"
+                app:border_color="#cccccc"
+                app:border_width="1dip"
+                app:corner_radius="100dip"
+        
+                 />
+</LinearLayout>
+                    <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textSize="22sp"
+      
+            android:layout_below="@id/liout_addphoto"
+            >
+            </TextView>  
+        
+                <Button
+          android:id="@+id/btn_decline"  
+           android:layout_width="200dp"
+           android:layout_height="40dp"
+           android:text="End Call" 
+             android:textColor="@color/white"
+            android:background="@drawable/selector_rejectcall"
+            android:layout_below="@id/txt_name"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="20dp"
+android:onClick="onEndCall"
+            >
+        </Button>
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    </RelativeLayout>
+</RelativeLayout>
+<!-- From: file:/D:/SYL-Backup-18-dec-2015/SYL-backup-12-oct-2015/app/src/main/res/layout-sw720dp-port/helloworld_senderlayout.xml -->
