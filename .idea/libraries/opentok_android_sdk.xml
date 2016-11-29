@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="opentok-android-sdk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/opentok-android-sdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
